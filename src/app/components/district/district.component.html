@@ -1,6 +1,6 @@
- <select name="d.district_id">
-1
-  <option  *ngFor="let d of district" value="{{d.district_id}}">{{d.district_name}}</option>
+ <select name="district">
+
+  <option  *ngFor="let d of district" value="{{d.district_id}}" [(ngModel)]="district">{{d.district_name}}</option>
 
 
 </select>

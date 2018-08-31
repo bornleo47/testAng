@@ -18,11 +18,11 @@ public district: any;
  }
 
   ngOnInit() {
-    this.http.get("http://localhost:8080/districts")
-    .subscribe((response) => {console.log(response); 
-      this.district=response;
+    // this.http.get("http://localhost:8080/districts")
+    // // .subscribe((response) => {console.log(response); 
+    // //   this.district=response;
 
-    });
+    // });
 
   }
 

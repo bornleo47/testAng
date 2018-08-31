@@ -44,7 +44,7 @@ export class UserserviceService {
 
 
   updateEmp(emp: employee) {
-    return this.http.put(this.baseUrl + '/users', emp);
+    return this.http.put(this.baseUrl + '/save', emp);
   }
 
   setter(emp: employee) {

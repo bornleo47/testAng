@@ -5,15 +5,18 @@
             <th>Id</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>Operations </th>
+            <th>District</th>
+            <th>Operations</th>
         </thead>
         <tbody>
             <tr *ngFor="let emp of employees">
                 <td>{{emp.id}}</td>
                 <td>{{emp.fullname}}</td>
                 <td>{{emp.address}}</td>
+                <td>{{emp.Districtc}}</td>
+
                 <td><button class="btn btn-danger" (click)="deleteUser(emp)">Delete</button>
-                    <button class="btn btn-primary" (click)="updateUser(emp)">Edit</button></td>
+                    <button class="btn btn-success" (click)="updateUser(emp)">Edit</button></td>
 
             </tr>
         </tbody>

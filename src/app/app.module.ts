@@ -7,12 +7,15 @@ import { UserformComponent } from './components/userform/userform.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import {DistrictComponent} from './components/district/district.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ListusersComponent,
-    UserformComponent
+    UserformComponent,
+    DistrictComponent
   ],
   imports: [
     BrowserModule,

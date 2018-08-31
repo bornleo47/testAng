@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserserviceService } from '../../services/userService/userservice.service';
-import { employee } from '../../employee';
+import { employee } from '../../model/employee';
 import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -10,7 +11,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./userform.component.css']
 })
 export class UserformComponent implements OnInit {
-  public emp: employee;
+  public empl= new employee();
+  public emp: any;
+  
 
 
   constructor(private userService: UserserviceService, private router: Router) { }

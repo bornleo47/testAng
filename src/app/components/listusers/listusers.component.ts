@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserserviceService } from '../../services/userService/userservice.service';
-import { employee } from '../../employee';
+import { employee } from '../../model/employee';
 import { Router } from '@angular/router';
 
 
@@ -23,6 +23,7 @@ export class ListusersComponent implements OnInit {
     }, (error) => {
       console.log(error);
     })
+ 
   }
 
 

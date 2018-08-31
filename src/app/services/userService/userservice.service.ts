@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { employee } from '../../employee';
+import { employee } from '../../model/employee';
 
 @Injectable({
   providedIn: 'root'
@@ -16,27 +16,35 @@ export class UserserviceService {
 
 
   getUsers() {
-    return this.http.get(this.baseUrl + '/empJson');
+    return this.http.get(this.baseUrl + '/users');
 
   }
 
 
+  getDistricts() {
+    return this.http.get(this.baseUrl + '/districts');
+
+  }
+
+
+
   deleteUser(id: number) {
 
-    return this.http.delete(this.baseUrl + '/empDelete/' + id);
+    return this.http.delete(this.baseUrl + '/users/' + id);
 
   }
 
 
   createEmp(emp: employee) {
-    return this.http.post(this.baseUrl + '/create', emp);
+    return this.http.post(this.baseUrl + '/save', emp);
+
 
 
   }
 
 
   updateEmp(emp: employee) {
-    return this.http.put(this.baseUrl + '/create', emp);
+    return this.http.put(this.baseUrl + '/users', emp);
   }
 
   setter(emp: employee) {
